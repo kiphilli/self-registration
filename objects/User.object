@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>GDPR_Terms_Agreed_Timestamp__c</fullName>
+        <description>The timestamp of when the user agreed to the GDPR agreement.</description>
+        <externalId>false</externalId>
+        <label>GDPR Terms Agreed Timestamp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>GDPR_Terms_Agreed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>User has agreed to the GDPR terms via the login flow for the education community.</description>
+        <externalId>false</externalId>
+        <label>GDPR Terms Agreed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Logins__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Counts the number of times a user logins to the platform</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of times user has logged in</inlineHelpText>
+        <label>Number of Logins</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
