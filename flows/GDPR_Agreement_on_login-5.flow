@@ -28,9 +28,6 @@
         <label>Does user need to agree to GDPR terms?</label>
         <locationX>527</locationX>
         <locationY>46</locationY>
-        <defaultConnector>
-            <targetReference>Increment_user_login_count</targetReference>
-        </defaultConnector>
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
             <name>continue</name>
@@ -92,9 +89,6 @@
         <label>Update current user record</label>
         <locationX>183</locationX>
         <locationY>323</locationY>
-        <connector>
-            <targetReference>Increment_user_login_count</targetReference>
-        </connector>
         <inputReference>currentUser</inputReference>
     </recordUpdates>
     <screens>
@@ -129,23 +123,6 @@
         <showHeader>false</showHeader>
     </screens>
     <startElementReference>User</startElementReference>
-    <subflows>
-        <name>Increment_user_login_count</name>
-        <label>Increment user login count</label>
-        <locationX>181</locationX>
-        <locationY>206</locationY>
-        <flowName>User_login</flowName>
-        <inputAssignments>
-            <name>LoginFlow_UserId</name>
-            <value>
-                <elementReference>userId</elementReference>
-            </value>
-        </inputAssignments>
-        <outputAssignments>
-            <assignToReference>UpdateUser</assignToReference>
-            <name>CurrentUser</name>
-        </outputAssignments>
-    </subflows>
     <variables>
         <description>User chosen account record</description>
         <name>Accnt</name>
